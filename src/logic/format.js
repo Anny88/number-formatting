@@ -14,7 +14,7 @@ export const format = (
     if (!val || !Number(val)) {
         val = DEFAULT_VALUE;
     }
-    // round to nearest n decimal or round down
+    // round to the nearest n decimal or round down
     const roundedValue = roundToNearest ? Number(val).toFixed(n) :
         (Math.floor(Number(val) * Math.pow(10, n) ) / Math.pow(10, n)).toFixed(n);
 
