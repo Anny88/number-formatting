@@ -9,6 +9,7 @@ it('should show three clients', function () {
     expect(format(1.555, 10, ',', '.')).toEqual('1,5550000000');
     expect(format(-1.55555, 4)).toEqual('-1,5555');
     expect(format('-1.55555', 4)).toEqual('-1,5555');
-    // expect(format(1.55555, 3, ',', '.', false)).toEqual('1,555');
+    expect(format(1.55555, 3, ',', '.', false)).toEqual('1,555');
+    expect(format(1.55555, 6, ',', '.', false)).toEqual('1,555550');
     expect(format('1.5555', 2)).toEqual('1,56');
 });
